@@ -1,0 +1,4 @@
+* Chrome'da çalışmıyor.
+* Iframe target problemi var.
+* DB normalizasyon problemi
+* arama terimleri bazı yerlerde session ile akarılıyor.

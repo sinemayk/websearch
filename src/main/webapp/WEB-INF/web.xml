@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <display-name>Damla Searcher Web App</display-name>
+
+  <servlet>
+    <servlet-name>LoginFormServlet</servlet-name>
+    <servlet-class>tr.gov.bilgem.damla.swa.LoginFormServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginFormServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+    <url-pattern>/home/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>tr.gov.bilgem.damla.swa.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+    <url-pattern>/login/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>                                                         
+    <servlet-name>SearchFormServlet</servlet-name>
+    <servlet-class>tr.gov.bilgem.damla.swa.SearchFormServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SearchFormServlet</servlet-name>
+    <url-pattern>/search_form</url-pattern>
+    <url-pattern>/search_form/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>tr.gov.bilgem.damla.swa.SearchServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search</url-pattern>
+    <url-pattern>/search/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>InsertRecordServlet</servlet-name>
+    <servlet-class>tr.gov.bilgem.damla.swa.InsertRecordServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>InsertRecordServlet</servlet-name>
+    <url-pattern>/insert</url-pattern>
+    <url-pattern>/insert/</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteRecordServlet</servlet-name>
+    <servlet-class>tr.gov.bilgem.damla.swa.DeleteRecordServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteRecordServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+    <url-pattern>/delete/</url-pattern>
+  </servlet-mapping>
+</web-app>
